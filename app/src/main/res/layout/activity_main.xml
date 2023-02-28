@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitedm"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_marginStart="@dimen/dim250"
+        android:layout_marginTop="-20dp"
+        android:paddingBottom="@dimen/dim50"
+
+        >
+
+
+        <ImageView
+
+            android:id="@+id/info"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:layout_alignParentTop="true"
+
+            android:src="@drawable/help"/>
+
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim30"
+        android:layout_marginRight="@dimen/dim30"
+        android:layout_marginBottom="@dimen/dim15"
+        android:background="@color/white"
+        android:elevation="2dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+
+        android:paddingBottom="@dimen/dim20">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="BMI INDEX"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+
+
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/wt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim10"
+            android:autofillHints=""
+            android:backgroundTint="@color/whitedm"
+            android:ems="12"
+            android:hint="Enter your weight (Kg)"
+            android:inputType="number"
+            android:minHeight="@dimen/dim48"
+            android:textColor="@color/black"
+            android:textColorHint="#455A64"
+            android:textCursorDrawable="@color/black" />
+
+        <EditText
+            android:id="@+id/ht"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim10"
+            android:backgroundTint="@color/whitedm"
+            android:ems="12"
+            android:hint="Enter your height (feet)"
+            android:inputType="numberDecimal"
+            android:minHeight="@dimen/dim48"
+            android:textColor="@color/black"
+            android:textColorHint="#455A64"
+            android:textCursorDrawable="@color/black" />
+
+        <EditText
+            android:id="@+id/ag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dim10"
+            android:backgroundTint="@color/whitedm"
+            android:ems="12"
+            android:hint="Enter your age"
+            android:inputType="number"
+            android:minHeight="@dimen/dim48"
+            android:textColor="@color/black"
+            android:textColorHint="#455A64"
+            android:textCursorDrawable="@color/black" />
+
+        <Button
+
+            android:id="@+id/cal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#FDD835"
+            android:elevation="@dimen/dim16"
+            android:ems="15"
+            android:shadowRadius="10"
+            android:text="calculate"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/rst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dim5"
+            android:backgroundTint="#FDD835"
+            android:elevation="15dp"
+            android:ems="10"
+            android:text="reset"
+            android:textColor="@color/black" />
+
+        <TextView
+    android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+          />
+
+    </LinearLayout>
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+android:textStyle="bold"
+        android:text="BMI INDEX INDICATORS"
+        android:textColor="@color/black"
+
+
+        android:textSize="15sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim30"
+        android:paddingTop="10dp"
+        android:layout_marginRight="@dimen/dim30"
+        android:layout_marginBottom="@dimen/dim15"
+        android:background="@color/white"
+        android:elevation="2dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+
+        android:paddingBottom="@dimen/dim20">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/obesity"
+    />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text=" Obesity: BMI of 30 or higher"/>
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/overweight"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text=" Overweight: BMI between 25 and 29.9"/>
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/normal"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="Normal weight: BMI between 18.5 and 24.9"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/below"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text=" Underweight: BMI less than 18.5"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
